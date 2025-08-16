@@ -16,8 +16,10 @@ export default function Home() {
         </div>
       </div>
       
-      {/* Temporarily commented out for debugging
+      {/* Testing Hero component */}
       <Hero />
+      
+      {/* Temporarily commented out for debugging
       <CitySelector />
       <ServicesOverview />
       <Stats />
