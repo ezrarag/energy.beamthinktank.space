@@ -4,6 +4,17 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { MapPin, Zap, Fuel, Sun, Navigation } from 'lucide-react'
 
+interface EnergyHub {
+  id: number
+  name: string
+  type: string
+  coordinates: { lat: number; lng: number }
+  city: string
+  capacity: string
+  status: string
+  icon: any
+}
+
 // Mock data for demonstration - replace with actual Supabase data
 const mockEnergyHubs = [
   {
@@ -67,7 +78,7 @@ const hubTypes = [
 
 export default function EnergyHubsMap() {
   const [selectedType, setSelectedType] = useState('all')
-  const [selectedHub, setSelectedHub] = useState(null)
+  const [selectedHub, setSelectedHub] = useState<EnergyHub | null>(null)
   const [mapCenter, setMapCenter] = useState({ lat: 39.8283, lng: -98.5795 })
 
   const filteredHubs = selectedType === 'all' 
