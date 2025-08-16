@@ -1,0 +1,40 @@
+{
+  "name": "beam-energy-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "@supabase/supabase-js": "^2.39.0",
+    "@supabase/auth-helpers-nextjs": "^0.8.7",
+    "@supabase/auth-helpers-react": "^0.4.2",
+    "stripe": "^14.7.0",
+    "@stripe/stripe-js": "^2.2.0",
+    "react-map-gl": "^7.1.6",
+    "mapbox-gl": "^2.15.0",
+    "lucide-react": "^0.294.0",
+    "tailwindcss": "^3.3.6",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
+    "clsx": "^2.0.0",
+    "framer-motion": "^10.16.16"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/mapbox-gl": "^2.7.19",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4"
+  }
+}
