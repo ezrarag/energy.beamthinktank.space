@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { MapPin, Zap, Fuel, SolarPanel, Navigation } from 'lucide-react'
+import { MapPin, Zap, Fuel, Sun, Navigation } from 'lucide-react'
 
 // Mock data for demonstration - replace with actual Supabase data
 const mockEnergyHubs = [
@@ -14,7 +14,7 @@ const mockEnergyHubs = [
     city: 'New York',
     capacity: '50 MW',
     status: 'active',
-    icon: SolarPanel
+    icon: Sun
   },
   {
     id: 2,
@@ -44,7 +44,7 @@ const mockEnergyHubs = [
     city: 'Los Angeles',
     capacity: '100 MW',
     status: 'active',
-    icon: SolarPanel
+    icon: Sun
   },
   {
     id: 5,
@@ -60,7 +60,7 @@ const mockEnergyHubs = [
 
 const hubTypes = [
   { key: 'all', label: 'All Hubs', icon: MapPin, color: 'text-gray-600' },
-  { key: 'renewable', label: 'Renewable Projects', icon: SolarPanel, color: 'text-green-600' },
+  { key: 'renewable', label: 'Renewable Projects', icon: Sun, color: 'text-green-600' },
   { key: 'charging', label: 'EV Charging', icon: Zap, color: 'text-blue-600' },
   { key: 'fuel', label: 'Fuel Stations', icon: Fuel, color: 'text-yellow-600' }
 ]

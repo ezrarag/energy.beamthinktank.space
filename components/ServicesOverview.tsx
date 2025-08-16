@@ -1,11 +1,11 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { SolarPanel, Zap, Fuel, Heart, MapPin, Users } from 'lucide-react'
+import { Sun, Zap, Fuel, Heart, MapPin, Users } from 'lucide-react'
 
 const services = [
   {
-    icon: SolarPanel,
+    icon: Sun,
     title: 'Renewable Projects',
     description: 'Solar farms, wind turbines, and hydroelectric installations powering communities sustainably.',
     features: ['Solar Energy', 'Wind Power', 'Hydroelectric', 'Community Solar'],
